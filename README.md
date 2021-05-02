@@ -23,11 +23,13 @@ Process
 2. Run `Pilkki.py` with game open and tool string already in water.
     * Tool must be stable and not have fish biting worm. Otherwise matcher gets wrong points.
 
-2. Feature matcher detects fishing tool tip and adds offset.  
+3. Feature matcher detects fishing tool tip and adds offset.  
 ![tip](./images/detect_tool_tip.png) 
 
-3. Handle part is detected which is used to be able to control pulling and random swings.  
+4. Handle part is detected which is used to be able to control pulling and random swings.  
 ![handle](./images/detect_tool_handle.png) 
+
+5. Then `PyAutoGUI` is used to control mouse and pull fishes up automatically.
 
 
 Troubleshooting
