@@ -12,13 +12,21 @@ Table of contents
 
 Process
 ============
-1. Window frame must be defined in Pilkki.py using Mouse.py to get points
-game = game.Game(x=166, y=187, x2=1441, y2=904, strategy=None)
+1. Window frame must be defined in `Pilkki.py` using `Mouse.py` to get points
+    ```python
+    from objects import game
+    game = game.Game(x=166, y=187, x2=1441, y2=904, strategy=None)
+    ```
+    * x,y = left top corner
+    * x2,y2 = right bottom corner of game screen
+
+2. Run `Pilkki.py` with game open and tool string already in water.
+    * Tool must be stable and not have fish biting worm. Otherwise matcher gets wrong points.
 
 2. Feature matcher detects fishing tool tip and adds offset.  
 ![tip](./images/detect_tool_tip.png) 
 
-3. Handle part is detected /or are of it to be able to control pulling.  
+3. Handle part is detected which is used to be able to control pulling and random swings.  
 ![handle](./images/detect_tool_handle.png) 
 
 
